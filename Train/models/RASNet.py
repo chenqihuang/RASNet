@@ -109,8 +109,7 @@ class RASNet(nn.Module):
         # channel ,spatial
         z_feat = z_feat_channel * z_feat
         z_feat = z_feat_residual * z_feat
-
-        z_feat = z_feat * z_feat_channel
+        
         x_feat = self.feat_extraction(x)
 
         # correlation of z and z
